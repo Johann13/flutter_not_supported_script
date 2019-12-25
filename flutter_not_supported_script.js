@@ -24,9 +24,11 @@ var isBlink = (isChrome || isOpera) && !!window.CSS;
 var notSupported = isEdge || isIE;
 
 if (notSupported) {
-    document.body.innerHTML += '<div style="width:100%;height:100%;text-align:center; color:#ffffff">' +
+    document.body.innerHTML += 
+    '<div style="width:100%;height:100%;text-align:center; color:#ffffff">' +
         '<p>This Browser is not Supported yet.</p>' +
-        '<p>Try Firefox, Safari or any Chromium based Browser like Chrome instead.</p>' +
+        '<p>Try Firefox, Safari or any Chromium based Browser' + 
+        'like Chrome or Brave instead.</p>' +
         '<p>Sorry for the inconvenience</p>' +
         '</div>';
  }
